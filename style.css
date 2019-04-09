@@ -1,0 +1,17 @@
+[class^="col"] {
+  border: 1px solid black;
+  height: 500px;
+}
+#nav_sup {
+  height: 100px;
+  line-height: 100px;
+}
+button {
+  display:block;
+  width: 100%;
+  border-radius: 20px;
+  background-color: white;
+}
+.row.text-center {
+  padding: 30px;
+}
