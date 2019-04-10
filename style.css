@@ -17,9 +17,11 @@ button {
 .white {
   color: white;
 }
-.nav_sx {
+.nav-sx {
   background-color: black;
   height: 100vh;
+  position: fixed;
+  left:0;
 }
 .bold {
   font-weight: bold;
@@ -28,7 +30,7 @@ button {
   font-size: 40px;
   margin-right: 5px;
 }
-.nav_sx .spotify {
+.nav-sx .spotify {
   display: flex;
   font-size: 25px;
   align-items: flex-end;
@@ -41,6 +43,10 @@ button {
   align-self: center;
 }
 a:hover {
+  color: white;
+  text-decoration: none;
+}
+a>span:hover {
   color: white;
   text-decoration: none;
 }
@@ -75,13 +81,84 @@ button {
 .cookie-privacy a:hover {
   color: #a5a5a5;
 }
-.cookie-privacy a:hover span {
+.cookie-privacy a:hover small span {
 padding-bottom: 3px;
 border-bottom: 1px solid #a5a5a5;
 }
+.sfondo {
+  background-image: linear-gradient(to right, #354759, #212c38, #131a21);
+  padding: 0 30px;
+  margin-bottom: 100px;
+}
 
 /*Navbar superiore*/
-#nav_sup {
-  height: 80px;
-  line-height: 80px;
+.nav-sup a {
+  text-transform: uppercase;
+  font-size: 13px;
 }
+.nav-sup {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.div-main {
+  display: flex;
+  flex-wrap: wrap;
+}
+.div-main img {
+  height: 180px;
+  width: 180px;
+}
+.item {
+  padding: 20px 20px 20px 0;
+}
+
+/*lettore*/
+.lettore {
+  height: 100px;
+  background-color: #3d3d3d;
+  line-height: 100px;
+}
+.lettore i {
+  font-size: 15px;
+  margin-right: 20px;
+}
+.play {
+  border: 1px solid #a5a5a5;
+  padding: 10px;
+  border-radius: 100%;
+}
+
+
+@media screen and (max-width: 767px) {
+  .padding20 {
+    padding: 0px;
+  }
+  .mr-10 {
+    margin-right: 0px;
+  }
+  .center {
+    text-align: center;
+  }
+  .logo {
+    font-size: 30px;
+    margin-right: 0px;
+    margin-top: 10px;
+  }
+  .nav-sx .spotify {
+  justify-content: center;
+  }
+  .nav-sx button {
+    font-size: 10px;
+  }
+  .cookie-privacy div {
+    margin-bottom: 10px;
+  }
+}
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .cookie-privacy div {
+    margin-bottom: 10px;
+  }
