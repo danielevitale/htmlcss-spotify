@@ -1,17 +1,87 @@
-[class^="col"] {
-  border: 1px solid black;
-  height: 500px;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-#nav_sup {
-  height: 100px;
-  line-height: 100px;
-}
+
+/*navbar sinistra*/
 button {
   display:block;
   width: 100%;
   border-radius: 20px;
   background-color: white;
 }
-.row.text-center {
-  padding: 30px;
+.padding20 {
+  padding: 20px;
+}
+.white {
+  color: white;
+}
+.nav_sx {
+  background-color: black;
+  height: 100vh;
+}
+.bold {
+  font-weight: bold;
+}
+.logo {
+  font-size: 40px;
+  margin-right: 5px;
+}
+.nav_sx .spotify {
+  display: flex;
+  font-size: 25px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.flex-center {
+  align-self: center;
+}
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+.mb-15 {
+  margin-bottom: 15px;
+}
+.font-nav {
+  font-size: 17px;
+}
+.light-grey {
+  color: #a5a5a5;
+}
+button {
+  padding: 3px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.accedi {
+  background-color: black;
+  color: white;
+}
+.cookie-privacy {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.cookie-privacy a:hover {
+  color: #a5a5a5;
+}
+.cookie-privacy a:hover span {
+padding-bottom: 3px;
+border-bottom: 1px solid #a5a5a5;
+}
+
+/*Navbar superiore*/
+#nav_sup {
+  height: 80px;
+  line-height: 80px;
 }
